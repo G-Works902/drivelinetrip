@@ -45,7 +45,7 @@
 <header>
   <div class="inner">
     <h1>Driveline Trip &mdash; プライバシーポリシー / Privacy Policy</h1>
-    <div class="sub">最終更新 / Last updated: 2026-10-19</div>
+    <div class="sub">最終更新 / Last updated: 2026-11-27</div>
   </div>
 </header>
 
@@ -62,8 +62,9 @@ Driveline Trip（以下「本アプリ」）は、G-Works が提供する Window
 </p>
 
 <div class="note">
-<strong>本アプリはインターネット通信を一切行いません。</strong>
-利用者の情報を収集・送信することはなく、外部のサーバーへ接続することもありません。地図・ルート検索・位置情報も使いません。
+<strong>本アプリは利用者の情報を収集・送信しません。</strong>
+本アプリ自身がインターネット通信を行うことはなく、外部のサーバーへ接続することもありません。地図・ルート検索・位置情報も使いません。
+メニューから G-Works のサイトや姉妹アプリの Store ページを選んだときだけ、Windows がブラウザーや Store アプリでそのページを開きます（4. を参照）。
 </div>
 
 <h3>1. 収集する情報</h3>
@@ -94,6 +95,8 @@ Driveline Trip（以下「本アプリ」）は、G-Works が提供する Window
 読み取った値は画面の表示を決めるためだけに使い、送信しません。
 Driveline Camper のプロジェクトや Driveline Tow のプロファイルから値を読み込む機能は、利用者がファイルを選んだときだけ、そのファイルを読み取ります。
 読み込んだ値は本アプリの中にコピーするだけで、元のファイルは変更しません。
+「区間の貼り付け」は、利用者がその画面を開いたときだけクリップボードの文字を読み取り、画面に表示します。
+読み取った文字は区間を作るためだけに使い、OK を押した区間だけが旅程に入ります。送信はしません。
 </p>
 
 <h3>4. ネットワーク・オンラインサービス</h3>
@@ -101,6 +104,17 @@ Driveline Camper のプロジェクトや Driveline Tow のプロファイルか
 本アプリはネットワーク通信機能を持ちません。パッケージが要求する機能も
 <code>runFullTrust</code>（Win32 デスクトップ アプリに必須）のみです。
 ヘルプはアプリに同梱したファイルをブラウザーで開くもので、通信は行いません。
+</p>
+<p>
+「…」メニューの「G-Works のサイト（シリーズのアプリの一覧）」を選ぶと、既定のブラウザーが
+<code>https://gworks-site.g-works-902.workers.dev/</code>（G-Works の製品紹介サイト）を開きます。
+「Driveline シリーズのアプリ」から姉妹アプリを選ぶと、Microsoft Store アプリがそのアプリのページを開きます
+（開けないときはブラウザーで <code>https://apps.microsoft.com/</code> のページを開きます）。
+どちらも利用者が選んだときだけ開き、起動時などに勧めることはありません。
+Store のページの URL には、本アプリから開いたことを示す目印 <code>cid=drivelinetripapp</code> が付きます
+（Microsoft の集計で、どこから来た閲覧かを区別するためのもので、利用者や端末を特定する情報は含みません）。
+本アプリから旅程などの入力したデータ・端末の情報を送ることはありません。開いた先での扱いは、
+それぞれのサイト（Microsoft Store は <a href="https://privacy.microsoft.com/privacystatement">Microsoft のプライバシーに関する声明</a>）に従います。
 </p>
 <p>
 本アプリは有償で、30 日間の試用版があります。購入と試用期間の管理は Microsoft Store が行い、
@@ -119,7 +133,7 @@ Microsoft のプライバシーに関する声明にしたがいます。
 
 <h3>7. セキュリティ</h3>
 <p>
-本アプリは情報を送信しないため、通信経路上の漏えいは発生しません。
+本アプリは情報を送信しないため、本アプリからの通信経路上の漏えいは発生しません。
 端末内のファイルの保護は、Windows のアクセス権と利用者の管理に依ります。旅程計画書を他の人に渡すときは、地名や宿泊地が含まれることにご注意ください。
 </p>
 
@@ -151,9 +165,11 @@ This policy explains how the App handles your information.
 </p>
 
 <div class="note">
-<strong>The App makes no network connections at all.</strong>
-It does not collect or transmit any information about you, and it never contacts an external server.
+<strong>The App does not collect or transmit any information about you.</strong>
+The App itself makes no network connections and never contacts an external server.
 It uses no maps, route search or location data.
+Only when you choose the G-Works website or a sister app's Store page from the menu does Windows open that page
+in your browser or the Store app (see section 4).
 </div>
 
 <h3>1. Information we collect</h3>
@@ -185,6 +201,8 @@ To match your system, the App reads Windows settings (display language, dark or 
 These values are used only to choose how the screen looks and are not transmitted.
 Importing from a Driveline Camper project or a Driveline Tow profile reads only the file you choose, and only when you
 choose it. The values are copied into the App; the source file is never changed.
+"Paste legs" reads the text on the clipboard only when you open that window, and shows it there. The text is used
+only to create legs; only the legs you accept with OK are added to the trip. Nothing is transmitted.
 </p>
 
 <h3>4. Network and online services</h3>
@@ -192,6 +210,17 @@ choose it. The values are copied into the App; the source file is never changed.
 The App has no networking features. The only capability the package declares is
 <code>runFullTrust</code>, which is required for Win32 desktop applications.
 The help is a set of files installed with the App and opened in your browser without any network access.
+</p>
+<p>
+Choosing "G-Works website (all our apps)" from the "…" menu opens
+<code>https://gworks-site.g-works-902.workers.dev/</code> (the G-Works product site) in your default browser.
+Choosing a sister app under "Driveline series apps" opens its page in the Microsoft Store app
+(or on <code>https://apps.microsoft.com/</code> in your browser if the Store app cannot be opened).
+They open only when you choose them; the App never promotes them at startup or otherwise.
+The Store links carry the marker <code>cid=drivelinetripapp</code>, which tells Microsoft's statistics that the
+visit came from the App; it contains nothing that identifies you or your device.
+The App never sends your trips, other inputs or device information. The site you open handles your visit under
+its own policy (for the Microsoft Store, the <a href="https://privacy.microsoft.com/privacystatement">Microsoft Privacy Statement</a>).
 </p>
 <p>
 The App is paid, with a 30-day trial. Purchases and the trial period are handled by the Microsoft Store; the App
@@ -210,7 +239,7 @@ after the App is uninstalled. Delete them from where you saved them when you no 
 
 <h3>7. Security</h3>
 <p>
-Because the App sends nothing, nothing can leak in transit. Files on your device are protected by Windows permissions
+Because the App sends nothing, nothing from the App can leak in transit. Files on your device are protected by Windows permissions
 and by you. When you share a trip plan, remember that it contains your places and stays.
 </p>
 
